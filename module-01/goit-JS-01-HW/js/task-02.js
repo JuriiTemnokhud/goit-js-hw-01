@@ -1,6 +1,6 @@
 const total = 100;
 
-let ordered = 50;
+const ordered = 50;
 
 if (total <= ordered) {
   console.log('На складе недостаточно твоаров!');
