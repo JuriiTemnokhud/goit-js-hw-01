@@ -1,3 +1,5 @@
+'use strict';
+
 const name = 'Генератор защитного поля';
 
 console.log(name);
