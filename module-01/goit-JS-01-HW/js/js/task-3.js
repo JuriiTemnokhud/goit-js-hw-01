@@ -2,14 +2,16 @@
 
 const ADMIN_PASSWORD = 'jqueryismyjam';
 
-const result = prompt('Password', '');
+const result = prompt('Введите пароль');
 
-const message =
-  // eslint-disable-next-line no-nested-ternary
-  result === null
-    ? 'Отменено пользователем!'
-    : result === ADMIN_PASSWORD
-    ? 'Добро пожаловать!'
-    : 'Доступ запрещен, неверный пароль!';
+let message;
+
+if (ADMIN_PASSWORD === result) {
+  message = 'Добро пожаловать!';
+} else if (result === null) {
+  message = 'Отменено пользователем!';
+} else {
+  message = 'Доступ запрещен, неверный пароль!';
+}
 
 alert(message);
