@@ -1,15 +1,16 @@
 'use strict';
 
-let input;
-
 let total = 0;
 
 let message;
 
 do {
-  input = prompt('Введите число');
+  let input = prompt('Введите число');
   input = Number(input);
-  message = total + +input;
-} while (input === null);
+  if (input !== null) {
+    break;
+  }
+  message = total + input;
+} while (true);
 
 alert(`'Общая сумма чисел равна ${message}'`);
