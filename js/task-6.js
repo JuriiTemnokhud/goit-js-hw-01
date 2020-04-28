@@ -6,11 +6,12 @@ let message;
 
 do {
   let input = prompt('Введите число');
-  input = Number(input);
-  if (input !== null) {
+  console.log(input);
+  if (input === null) {
     break;
   }
+  input = Number(input);
   message = total + input;
-} while (true);
+} while (!null);
 
 alert(`'Общая сумма чисел равна ${message}'`);
